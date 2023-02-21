@@ -41,7 +41,7 @@ class Asiento:
         self.registro = registro
     
     #metodos
-    def cambiarColor(color, self):
+    def cambiarColor(self, color):
         permitidos = ["rojo", "verde", "amarillo", "negro", "blanco"]
         if color in permitidos:
             #print("ha cambiado el color a",color)
@@ -56,10 +56,10 @@ class Motor:
         self.registro = registro
 
     #metodos
-    def cambiarRegistro(registro, self):
+    def cambiarRegistro(self, registro):
         self.registro = registro
 
-    def asignarTipo(tipo, self):
+    def asignarTipo(self, tipo):
         permitidos = ["electrico", "gasolina"]
         if tipo in permitidos:
             #print("funciona c:")
