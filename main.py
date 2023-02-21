@@ -12,7 +12,7 @@ class Auto:
         self.registro = registro
 
     #Métodos
-    def CantidadAsientos(self):
+    def cantidadAsientos(self):
         cont = 0
 
         for i in self.asientos:
@@ -22,7 +22,7 @@ class Auto:
             
         return cont
 
-    def VerificarIntegridad(self):
+    def verificarIntegridad(self):
         for puesto in self.asientos:
             if puesto != None and puesto.registro != self.registro:
                 return "Las piezas no son originales"
@@ -41,7 +41,7 @@ class Asiento:
         self.registro = registro
     
     #metodos
-    def CambiarColor(color, self):
+    def cambiarColor(color, self):
         permitidos = ["rojo", "verde", "amarillo", "negro", "blanco"]
         if color in permitidos:
             #print("ha cambiado el color a",color)
@@ -56,10 +56,10 @@ class Motor:
         self.registro = registro
 
     #metodos
-    def CambiarRegistro(registro, self):
+    def cambiarRegistro(registro, self):
         self.registro = registro
 
-    def AsignarTipo(tipo, self):
+    def asignarTipo(tipo, self):
         permitidos = ["electrico", "gasolina"]
         if tipo in permitidos:
             #print("funciona c:")
