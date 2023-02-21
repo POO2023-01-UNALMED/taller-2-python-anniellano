@@ -2,7 +2,7 @@ class Auto:
     #Atributos de clase
     cantidadCreados = 0
     #Constructor
-    def _init_(self, modelo, precio, asientos, marca, motor, registro):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         #Atributos
         self.modelo = modelo
         self.precio = precio
